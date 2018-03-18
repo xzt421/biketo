@@ -1,0 +1,240 @@
+html,
+body,
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    header {
+        width: 100%;
+        max-height: 3.16rem;
+        div {
+            height: 1.76rem;
+            background: #D93C37;
+        }
+        #logo {
+            display: inline-block;
+            width: 3.84rem;
+            height: 1.76rem;
+            background: url(../img/logo.png) no-repeat;
+            background-size: cover;
+            float: left;
+            margin: 0rem 0.4rem;
+        }
+        #title {
+            display: inline-block;
+            height: 100%;
+            color: white;
+            font-size: 0.6rem;
+            line-height: 1.76rem;
+            float: left;
+        }
+        #user {
+            display: inline-block;
+            width: 0.76rem;
+            height: 0.76rem;
+            background: url(../img/user.png) no-repeat;
+            background-size: cover;
+            float: right;
+            margin-top: 0.4rem;
+            margin-right: 0.8rem;
+        }
+    }
+    main {
+        flex: 1;
+        width: 100%;
+        overflow: auto;
+        .newstitle {
+            padding: 0.9rem 0.6rem 0.4rem;
+            font-size: 0.96rem;
+            line-height: 1.8;
+            font-weight: lighter;
+        }
+        .info {
+            padding: 0rem 0.6rem 0.8rem;
+            color: #666666;
+            font-size: 0.48rem;
+            .newstime {
+                margin-left: 0.4rem;
+            }
+            .onclick {
+                float: right;
+            }
+        }
+        #content {
+            padding: 0rem 0.4rem 0.5rem;
+            color: #666666;
+            font-size: 0.64rem;
+            p {
+                text-indent: 1.25rem;
+                margin-top: 0.4rem;
+            }
+            p:last-of-type {
+                text-align: right;
+            }
+            img {
+                display: block;
+                width: 100%;
+            }
+            a {
+                color: #C20305;
+                text-decoration: underline;
+            }
+        }
+        .tags {
+            color: #333333;
+            font-size: 0.48rem;
+            line-height: 1;
+            margin: 0.8rem 0rem;
+            padding: 0rem 0.4rem;
+            span {
+                display: inline-block;
+                margin: 0.2rem;
+                padding: 0.2rem;
+                border: 1px solid #EEEEEE;
+                border-radius: 1rem;
+            }
+        }
+        .title {
+            padding: 0.1rem 0.6rem;
+            display: flex;
+            font-size: 0.5rem;
+            line-height: 1;
+            .point {
+                width: 0.1rem;
+                height: 0.5rem;
+                background: #D43D35;
+                margin-right: 0.28rem;
+            }
+            .line {
+                flex: 1;
+                height: 1px;
+                background: #EAEAEA;
+                position: relative;
+                top: 0.2rem;
+            }
+        }
+        .more {
+            #newslist {
+                li {
+                    width: 100%;
+                    height: 2.7rem;
+                    margin-top: 0.5rem;
+                    padding: 0rem 0.4rem;
+                    box-sizing: border-box;
+                    display: flex;
+                }
+                a,
+                img {
+                    display: block;
+                    width: 4.8rem;
+                    height: 2.7rem;
+                    margin-right: 0.6rem;
+                }
+                div {
+                    position: relative;
+                }
+                h4 {
+                    width: 8.56rem;
+                    color: #333333;
+                    font-weight: lighter;
+                    font-size: 0.56rem;
+                    line-height: 0.64rem;
+                    cursor: pointer;
+                }
+                p {
+                    width: 100%;
+                    color: #CCCCCC;
+                    font-size: 0.48rem;
+                    position: absolute;
+                    bottom: 0;
+                }
+                .date {
+                    float: right;
+                }
+            }
+        }
+        .hotPL {
+            margin-top: 1.6rem;
+            .headimg {
+                display: inline-block;
+                width: 1.4rem;
+                height: 1.4rem;
+                border-radius: 50%;
+                overflow: hidden;
+                float: left;
+                img {
+                    width: 100%;
+                }
+            }
+            .user-input {
+                text-align: right;
+                padding: 0.6rem;
+                overflow: hidden;
+                textarea {
+                    width: 11.6rem;
+                    height: 3.6rem;
+                    color: #BEBEBE;
+                    line-height: 1;
+                    background: #F7F7F7;
+                    box-sizing: border-box;
+                    padding: 5%;
+                    outline: none;
+                    border: none;
+                    resize: none;
+                }
+                .btn {
+                    width: 2rem;
+                    height: 1.2rem;
+                    color: #FFFFFF;
+                    font-size: 0.48rem;
+                    text-align: center;
+                    line-height: 1.2rem;
+                    background: #D93C37;
+                    border-radius: 0.2rem;
+                    float: right;
+                    margin-top: 0.4rem;
+                }
+            }
+        }
+        .comments {
+            padding: 0.6rem 0rem 1.6rem;
+            .comment {
+                padding: 0.6rem;
+                overflow: hidden;
+                .wrap {
+                    width: 11.6rem;
+                    float: right;
+                    img {
+                        width: 0.56rem;
+                        height: 0.56rem;
+                        margin-right: 0.2rem;
+                    }
+                    .user {
+                        font-size: 0.56rem;
+                    }
+                    .username {
+                        color: #7A7A7A;
+                    }
+                    .zan {
+                        color: #CCCCCC;
+                        float: right;
+                    }
+                    .saytext {
+                        font-size: 0.64rem;
+                        line-height: 1.5;
+                    }
+                    .saytime{
+                        color: #CCCCCC;
+                        font-size: 0.48rem;
+                        margin-top: 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

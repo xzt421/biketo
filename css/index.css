@@ -1,0 +1,142 @@
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%; }
+
+#app {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  #app header {
+    width: 100%;
+    max-height: 3.16rem; }
+    #app header div {
+      height: 1.76rem;
+      background: #D93C37; }
+    #app header #logo {
+      display: inline-block;
+      width: 3.84rem;
+      height: 1.76rem;
+      background: url(../img/logo.png) no-repeat;
+      background-size: cover;
+      float: left;
+      margin: 0rem 0.4rem; }
+    #app header #title {
+      display: inline-block;
+      height: 100%;
+      color: white;
+      font-size: 0.6rem;
+      line-height: 1.76rem;
+      float: left; }
+    #app header #user {
+      display: inline-block;
+      width: 0.76rem;
+      height: 0.76rem;
+      background: url(../img/user.png) no-repeat;
+      background-size: cover;
+      float: right;
+      margin-top: 0.4rem;
+      margin-right: 0.8rem; }
+    #app header #navs {
+      width: 100%;
+      max-height: 1.4rem;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #EAEAEA;
+      box-sizing: border-box;
+      background: white; }
+      #app header #navs li {
+        width: 1.12rem;
+        height: 1.4rem;
+        font-size: 0.56rem;
+        color: #BEBEBE;
+        line-height: 1.4rem;
+        box-sizing: border-box;
+        cursor: pointer; }
+      #app header #navs .checked {
+        color: #D93C37;
+        border-bottom: 1px solid #D93C37; }
+  #app main {
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+    font-size: 0.56rem;
+    padding-bottom: 0.4rem; }
+    #app main .swiper-container {
+      width: 100%;
+      height: 7rem;
+      text-align: center;
+      position: relative; }
+      #app main .swiper-container .swiper-wrapper {
+        line-height: 7rem;
+        cursor: pointer; }
+      #app main .swiper-container img {
+        width: 100%; }
+      #app main .swiper-container .swiper-pagination {
+        text-align: right;
+        bottom: 0.25rem; }
+        #app main .swiper-container .swiper-pagination .swiper-pagination-bullet {
+          display: inline-block;
+          width: 0.32rem;
+          height: 0.08rem;
+          background: #000000;
+          border-radius: 0;
+          margin: 0rem 0.12rem; }
+        #app main .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+          background: #FFFFFF; }
+        #app main .swiper-container .swiper-pagination .swiper-pagination-bullet:last-of-type {
+          margin-right: 0.4rem; }
+    #app main #newslist li {
+      width: 100%;
+      height: 2.7rem;
+      margin-top: 0.5rem;
+      padding: 0rem 0.4rem;
+      box-sizing: border-box;
+      display: flex; }
+    #app main #newslist a,
+    #app main #newslist img {
+      display: block;
+      width: 4.8rem;
+      height: 2.7rem;
+      margin-right: 0.6rem; }
+    #app main #newslist div {
+      position: relative; }
+    #app main #newslist h4 {
+      width: 8.56rem;
+      color: #333333;
+      font-weight: lighter;
+      font-size: 0.56rem;
+      line-height: 0.64rem;
+      cursor: pointer; }
+    #app main #newslist p {
+      width: 100%;
+      color: #CCCCCC;
+      font-size: 0.48rem;
+      position: absolute;
+      bottom: 0; }
+    #app main #newslist .date {
+      float: right; }
+    #app main #loading {
+      display: none;
+      width: 3rem;
+      height: 3rem;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      margin-top: -1.5rem;
+      margin-left: -1.5rem; }
+      #app main #loading img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        animation: loading 1s steps(12);
+        animation-iteration-count: infinite; }
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=index.css.map */
