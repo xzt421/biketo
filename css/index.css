@@ -87,6 +87,7 @@ body,
           background: #FFFFFF; }
         #app main .swiper-container .swiper-pagination .swiper-pagination-bullet:last-of-type {
           margin-right: 0.4rem; }
+    #app main #newslist {width:100%}
     #app main #newslist li {
       width: 100%;
       height: 2.7rem;
